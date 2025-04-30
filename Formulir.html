@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html#Home"  style="color: black;" style="font-size: large;">Home</a></li>
+                <li><a href="index.html#tentang"  style="color: black;" style="font-size: large;">tentang</a></li>
+                <li><a href="index.html#produk"  style="color: black;" style="font-size: large;">produk</a></li>
+                <li><a href="saran.html"  style="color: black;" style="font-size: large;">Saran</a></li>
+                <li><a href="kontak.html"  style="color: black;" style="font-size: large;">Kontak Kami</a></li>
+                <li><a href="Formulir.html"  style="color: black;" style="font-size: large;">Formulir</a></li>
+            </ul>
+    <div class="tombol">&#9776;</div>
+        </div>
+    </nav>
+    <section class="layanan-section" id="layanan">
+        <h2>Mobil sewa kami</h2>
+        <table class="layanan-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Merek</th>
+                    <th>Gambar</th>
+                    <th>kapasitas</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Toyota Avanza</td>
+                    <td><img src="assets/mobil1.jpg" width="125"></td>
+                    <td>1-4</td>
+                    <td>500.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Daihatsu xenia</td>
+                    <td><img src="assets/mobil2.jpg" width="125"></td>
+                    <td>1-5</td>
+                    <td>500.000</td>
+                </tr>
+                <tr></tr>
+                    <td>3</td>
+                    <td>Daihatsu xenia</td>
+                    <td><img src="assets/mobil3.jpg" width="125"></td>
+                    <td>1-4</td>
+                    <td>800.000</td>
+                </tr>
+                <tr></tr>
+                    <td>4</td>
+                    <td>Daihatsu ayla</td>
+                    <td><img src="assets/sewa2.webp" width="125"></td>
+                    <td>1-4</td>
+                    <td>900.000</td>
+            </tr>
+            <tr></tr>
+                    <td>5</td>
+                    <td>Tesla</td>
+                    <td><img src="assets/produk1.webp" width="125"></td>
+                    <td>1-4</td>
+                    <td>1.000.000</td>
+                    <tr>
+                        <td>6</td>
+                    <td>BMW</td>
+                    <td><img src="assets/produk2.jpg" width="125"></td>
+                    <td>1-4</td>
+                    <td>800.000</td>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                    <td>jeep</td>
+                    <td><img src="assets/produk3.jpg" width="125"></td>
+                    <td>1-6</td>
+                    <td>800.000</td>
+                    <tr>
+                    </tr>
+            </thead>
+        </table>
+    </section>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            justify-self: center;
+            align-items: center;
+            display: flex;
+        }
+    </style> <br>
+    <p align="center">Setelah memilih mobil, silahkan isi formulir tersebut untuk menyewanya</p>
+    <p align="center" style="font-size: larger;">FORMULIR PENYEWAAN</p>
+    <form>
+        <fieldset>
+            <label for="Nama Lengkap">Nama Lengkap</label>
+            <input type="text" name="Nama Lengkap" id="Nama Lengkap" required> <br>
+            <br>
+            <label for="Alamat Rumah">Alamat Rumah</label>
+            <input type="Text" name="Alamat Rumah" id="Alamat Rumah" required> <br>
+            <br>
+            <label for="No.Handphone">No.Handphone</label>
+            <input type="number" name="No.Handphone" id="No.Handphone" required> <br>
+            <br>
+            Pilih Jenis Kelamin: 
+            <br>
+        <input type="radio" name="Jenis kelamin" value="Laki-laki" /> Laki-laki
+        <br />
+        <input type="radio" name="Jenis kelamin" value="Perempuan" /> Perempuan <br>
+        <br />
+        <label for="Pilih Ekskul">Pilih merk mobil untuk disewa</label>
+            <br>
+            <input type="checkbox" name="Ekskul" value="toyota avanza" /> toyota avanza
+            <br>
+            <input type="checkbox" name="Ekskul" value="daihatsu xenia" /> daihatsu xenia
+            <br>
+            <input type="checkbox" name="Ekskul" value="daihatsu ayla" /> daihatsu ayla
+            <br>
+            <input type="checkbox" name="Ekskul" value="daihtsu sigra" /> daihatsu sigra
+            <br>
+            <br>
+        <label for="Email">Email</label> <br>
+            <input type="Email" name="Email" id="Email" required> <br>
+            <input type="submit" value="submit"/> <br>
+            <br>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <script type="text/javascript">
+        const tombol= document.querySelector(".tombol");
+        const menu= documnet.querySelector(".menu");
+        tombol.addEventListener("click", () => {
+            menu.classList.toogle("aktif");
+        });
+    </script>
